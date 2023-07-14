@@ -37,22 +37,26 @@
         </form>
         <h2>Message History:</h2>
         <div class="messages">
-            <table>
-                <tr>
-                    <th>Name</th>
-                    <th>Email</th>
-                    <th>Message</th>
-                    <th>Created</th>
-                </tr>
-                    @foreach($messages as $message)
-                        <tr>
-                            <td>{{$message->name}}</td>
-                            <td>{{$message->email}}</td>
-                            <td>{{$message->message}}</td>
-                            <td>{{$message->created_at}}</td>
-                        </tr>
-                    @endforeach
-            </table>
+                <table>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Message</th>
+                        <th>Created</th>
+                    </tr>
+                    @if (sizeof($messages) == 0)
+                        <td colspan="4" style="text-align: center"><i>No messages found</i></td>
+                    @else
+                        @foreach($messages as $message)
+                            <tr>
+                                <td>{{$message->name}}</td>
+                                <td>{{$message->email}}</td>
+                                <td>{{$message->message}}</td>
+                                <td>{{$message->created_at}}</td>
+                            </tr>
+                        @endforeach
+                </table>
+            @endif
         </div>
     </div>
 </body>
