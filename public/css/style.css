@@ -1,0 +1,84 @@
+*{
+    font-family: Helvetica;
+}
+
+h1, h2{
+    color: rgb(56, 16, 107);
+    text-align: center;
+}
+
+.wrapper{
+    position: absolute;
+    top: 0%; left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.error{
+    color: white;
+    background-color: brown;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.wrapper label{
+    font: bold 18px Helvetica;
+    color: rgb(56, 16, 107);
+    margin-right: 20px;
+}
+
+.wrapper input[type=text]{
+    font: normal 18px Helvetica;
+    padding: 5px;
+    border: none;
+    border-bottom: 2px rgb(56, 16, 107) solid;
+    width: 84%;
+    outline: none;
+}
+
+.wrapper input[type=submit]{
+    padding: 15px 10px;
+    font: bold 20px Helvetica;
+    outline: none;
+    color: #fff;
+    background-color: rgb(56, 16, 107);
+    border: 2px solid;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.wrapper input[type=submit]:active{
+    background-color: rgb(29, 8, 58);;
+    color: rgb(255, 255, 255);
+}
+
+.wrapper textarea{
+    font: normal 18px Helvetica;
+    padding: 10px;
+    border: 2px rgb(56, 16, 107) solid;
+    border-radius: 5px;
+    outline: none;
+    resize: none;
+    width: 96%;
+    height: 5%;
+}
+
+.wrapper table{
+    border-spacing:0;
+    border-collapse: collapse;
+}
+
+.wrapper table th{
+    background-color: rgb(56, 16, 107);
+    color: #fff;
+    padding: 10px;
+}
+
+.wrapper table td{
+    padding: 10px;
+}
+
+.wrapper table tr:nth-child(odd){
+    background-color: silver;
+}
