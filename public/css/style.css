@@ -11,6 +11,7 @@ h1, h2{
     position: absolute;
     top: 0%; left: 50%;
     transform: translate(-50%, 0%);
+    width: 600px;
 }
 
 .error{
@@ -67,6 +68,8 @@ h1, h2{
 .wrapper table{
     border-spacing:0;
     border-collapse: collapse;
+    margin: 0 auto;
+    width: 600px;
 }
 
 .wrapper table th{
